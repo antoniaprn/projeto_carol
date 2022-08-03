@@ -28,6 +28,7 @@ dds <- DESeqDataSetFromMatrix(countData = round(cts_filt), colData = coldata, de
 dds$Time <- factor(dds$Time, levels = c("NRE","RE"))
 head(dds)
 
+
 dds <- DESeq(dds)
 res <- results(dds)
 head(res)
