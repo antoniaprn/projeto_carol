@@ -2,6 +2,7 @@
 
 library(DESeq2)
 library(dplyr)
+
 getwd()
 
 cts = read.delim("cutt_bw1-ReadCount.tab", sep="", header = T)
